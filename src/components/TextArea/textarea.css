@@ -1,0 +1,20 @@
+#TextArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 1.5rem;
+}
+
+.TextAreaTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.TextAreaDesc {
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 0 2rem;
+    display: block;
+    text-align: left;
+}
