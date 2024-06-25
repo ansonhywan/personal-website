@@ -14,7 +14,14 @@
 .TextAreaDesc {
     font-weight: 100;
     font-size: 1rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    padding: 0 20rem;
     display: block;
     text-align: left;
 }
+
+/* TODO 
+- Change Resume page to use display:grid
+- Make about me use display:flex
+- Add travel tracker
+*/

@@ -1,8 +1,8 @@
 .ListItems {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: flex-start;
+    align-items: center;
     align-content: center;
     row-gap: 1.5rem;
     text-align: left;
@@ -21,7 +21,8 @@
 .ListItemImg {
     height: 6rem;
     width: 6rem;
-    margin: 0.5rem 1rem;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .ListItemText {
@@ -36,4 +37,6 @@
 .ListItemText>p {
     padding-top: 0.25rem;
     word-break: break-all;
+    white-space: pre;
+    line-height: 2;
 }
