@@ -1,31 +1,33 @@
 #intro {
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.ProfilePic {
-    position: absolute;
-    top: -25rem;
-    right: -25rem;
-    z-index: -1;
-    object-fit: cover;
-    height: 150vh;
-}
-
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 12rem;
-    font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    align-items: stretch;
+    align-content: center;
+    padding: 10rem;
+    
+}
+
+/*
+.ProfilePic {
+    position: absolute;
+    top: 5rem;
+    right: 20rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 120vh;
+}
+*/
+
+.introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    font-size: 12rem;
+    font-weight: 700;
+    
 }
 
 .introGreeting {
