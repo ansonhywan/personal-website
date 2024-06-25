@@ -8,16 +8,13 @@
     
 }
 
-/*
 .ProfilePic {
-    position: absolute;
-    top: 5rem;
-    right: 20rem;
-    z-index: -1;
-    object-fit: cover;
-    height: 120vh;
+    position: relative;
+    top: 10px;
+    max-width: 10%;
+    max-height: 10%;
 }
-*/
+
 
 .introContent {
     display: flex;
