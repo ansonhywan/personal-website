@@ -1,6 +1,6 @@
 import "./Home.css"
 
-import pic from "../assets/anson_ugly_af-circle.png";
+import pic from "../assets/anson_ugly_af.png";
 import Intro from "../components/Intro/intro";
 import TextArea from "../components/TextArea/textarea";
 
@@ -8,6 +8,7 @@ export default function Home () {
   return (
     <div className="Home">
       <Intro />
+      <TextArea title={"What I do"} header={"testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"}></TextArea>
     </div>
   );
 }

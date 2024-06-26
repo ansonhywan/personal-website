@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import pic from "../../assets/anson_ugly_af-circle.png";
+import pic from "../../assets/anson_ugly_af.png";
 
 const Intro = () => {
   return (
@@ -11,7 +11,7 @@ const Intro = () => {
           I'm
           <span className="introName">
             {" "}
-            Anson <img src={pic} alt="ProfilePic" className="ProfilePic" />
+            Anson 
           </span>
         </span>
         <p className="introPara"> An aspiring Software Developer </p>
