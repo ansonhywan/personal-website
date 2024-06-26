@@ -2,15 +2,22 @@ import "./Resume.css";
 
 import TextArea from "../components/TextArea/textarea";
 import ListItem from "../components/ListItem/listitem";
+import Card from "../components/Card/card";
 import darwinai_icon from "../assets/darwinai_icon.jpeg";
 import ph_icon from "../assets/ph_icon.png";
 import flipp_icon from "../assets/flipp_icon.png";
 import nova_icon from "../assets/nova_icon.jpeg";
+import cpp from "../assets/skills/cpp.png";
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import js from "../assets/skills/js.png";
+import python from "../assets/skills/python.png";
 
 export default function About() {
   return (
     <div className="Resume">
       <TextArea
+        className="ResumeIntro"
         title={"Resume"}
         header={
           "I graduated with a degree in Computer Engineering from the University of Waterloo, where I developed a strong foundation in software development concepts. During my time there, I completed several internships in diverse fields such as AdTech, AI, and most recently HealthTech. These internships provided me with hands-on experience in software engineering and exposed me to various industry practices for  developing, maintaining, and testing production applications. Additionally, I gained valuable skills in agile processes and working in startup team-environments."
@@ -29,22 +36,34 @@ export default function About() {
           img_src={darwinai_icon}
           img_alt={"darwinai_icon"}
           title={"Deep Learning Automation Developer @ DarwinAI"}
-          body={"● Explored and fixed bugs within APIs, databases, and UI. Analyzed stack traces, docker logs, database data \n● Greatly increased automated test coverage for API endpoints, database validation, and UI flows for new features \n● Took leadership role in the automation of the Data Export and CSV Export epics that were demoed to key clients \n● Implemented barcode and QR code scanner utilizing OpenCV that automatically populated fields within UI \n● Created & presented SQL data generation script to help developers populate data to tables for quick and easy testing"}
+          body={
+            "● Explored and fixed bugs within APIs, databases, and UI. Analyzed stack traces, docker logs, database data \n● Greatly increased automated test coverage for API endpoints, database validation, and UI flows for new features \n● Took leadership role in the automation of the Data Export and CSV Export epics that were demoed to key clients \n● Implemented barcode and QR code scanner utilizing OpenCV that automatically populated fields within UI \n● Created & presented SQL data generation script to help developers populate data to tables for quick and easy testing"
+          }
         />
         <ListItem
           img_src={nova_icon}
           img_alt={"nova_icon"}
           title={"QA Software Developer @ Nova"}
-          body={"● Increased automated test coverage for the Polar/Nova Web Hub using Python Selenium \n● Refactored UI tests to follow Page Object Model design pattern for more modular, organized code \n● Automated front-end UI, back-end database validation, client-side ad rendering, network traffic event collection \n● Utilized databases for manual and automated testing. Learned how to use database tools such as SequelPro"}
+          body={
+            "● Increased automated test coverage for the Polar/Nova Web Hub using Python Selenium \n● Refactored UI tests to follow Page Object Model design pattern for more modular, organized code \n● Automated front-end UI, back-end database validation, client-side ad rendering, network traffic event collection \n● Utilized databases for manual and automated testing. Learned how to use database tools such as SequelPro"
+          }
         />
         <ListItem
           img_src={flipp_icon}
           img_alt={"flipp_icon"}
           title={"Software Engineer in Test @ Flipp"}
-          body={"● Increased automated test coverage for the Flipp Android App using Espresso, Mockito, and JUnit \n● Created Python script within CI/CD for targeted testing in pull requests, improving dev velocity while ensuring quality \n● Collaborated with software developers to create test plans, brainstorm edge cases, write unit and integration tests"}
+          body={
+            "● Increased automated test coverage for the Flipp Android App using Espresso, Mockito, and JUnit \n● Created Python script within CI/CD for targeted testing in pull requests, improving dev velocity while ensuring quality \n● Collaborated with software developers to create test plans, brainstorm edge cases, write unit and integration tests"
+          }
         />
+      </div>
+      <div className="SkillCards">
+        <Card img_src={cpp} img_alt={"cpp"} />
+        <Card img_src={js} img_alt={"js"} />
+        <Card img_src={python} img_alt={"python"} />
+        <Card img_src={html} img_alt={"html"} />
+        <Card img_src={css} img_alt={"css"} />
       </div>
     </div>
   );
 }
-

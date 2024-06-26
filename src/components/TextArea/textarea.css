@@ -1,22 +1,20 @@
 #TextArea {
     display: flex;
     flex-direction: column;
-    text-align: center;
     margin: 0 1.5rem;
+    padding: 0 35rem;
 }
 
 .TextAreaTitle {
     font-size: 3rem;
     font-weight: 600;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .TextAreaDesc {
     font-weight: 100;
     font-size: 1rem;
-    margin: 0 2rem;
-    padding: 0 20rem;
-    display: block;
     text-align: left;
 }
 
